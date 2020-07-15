@@ -235,7 +235,7 @@ __declspec(dllexport) HRESULT PresentHook(IDXGISwapChain* swapChain, UINT syncIn
 		ImGui::SetNextWindowSize({ 500, 400 }, ImGuiCond_Always);
 		ImGui::SetNextWindowCollapsed(false, ImGuiCond_Always);
 		static int tabb = 0;
-		ImGui::Begin((" SkullFN "), reinterpret_cast<bool*>(true)); // start open
+		ImGui::Begin((" MavenFN - By Imperious "), reinterpret_cast<bool*>(true)); // start open
 		ImGui::SetWindowPos(ImVec2(0, 25), ImGuiCond_FirstUseEver);
 
 			ImGui::Checkbox(("Aimbot"), &Settings.Aimbot);
