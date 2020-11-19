@@ -320,7 +320,7 @@ __declspec(dllexport) HRESULT PresentHook(IDXGISwapChain* swapChain, UINT syncIn
 
 		std::vector<PVOID> playerPawns;
 		for (auto li = 0UL; li < ReadDWORD(world, Offsets::Engine::World::Levels + sizeof(PVOID)); ++li) {
-			auto levels = ReadPointer(world, 0x148);//Levels
+			auto levels = ReadPointer(world, 0x138);//Levels
 			if (!levels) break;
 
 			auto level = ReadPointer(levels, li * sizeof(PVOID));
@@ -367,14 +367,14 @@ __declspec(dllexport) HRESULT PresentHook(IDXGISwapChain* swapChain, UINT syncIn
 
 		for (auto pawn : playerPawns) 
 		{
-			auto state = ReadPointer(pawn, 0x238);
+			auto state = ReadPointer(pawn, Offsets::Engine::Pawn::PlayerState);
 			if (!state) continue;
 
-			auto mesh = ReadPointer(pawn, 0x278);
+			auto mesh = ReadPointer(pawn, Offsets::Engine::Character::Mesh);
 			if (!mesh) continue;
 
-			auto bones = ReadPointer(mesh, 0x420);
-			if (!bones) bones = ReadPointer(mesh, 0x420 + 0x10);
+			auto bones = ReadPointer(mesh, Offsets::Engine::StaticMeshComponent::StaticMesh);
+			if (!bones) bones = ReadPointer(mesh, Offsets::Engine::StaticMeshComponent::StaticMesh + 0x10);
 			if (!bones) continue;
 
 			float compMatrix[4][4] = { 0 };

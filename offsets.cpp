@@ -135,32 +135,32 @@ namespace Offsets {
 		}
 
 
-		Engine::World::OwningGameInstance = 0x188;
-		Engine::World::Levels = 0x148;
+		Engine::World::OwningGameInstance = 0x180;
+		Engine::World::Levels = 0x138;
 		Engine::GameInstance::LocalPlayers = 0x38;
 		Engine::Player::PlayerController = 0x30;
 		Engine::PlayerController::AcknowledgedPawn = 0x298;
-		Engine::Controller::ControlRotation = 0x280;
-		Engine::Pawn::PlayerState = 0x238;
+		Engine::Controller::ControlRotation = 0x2A0;
+		Engine::Pawn::PlayerState = 0x240;
 		Engine::Actor::RootComponent = 0x130;
-		Engine::Character::Mesh = 0x278;
+		Engine::Character::Mesh = 0x280;
 		Engine::SceneComponent::RelativeLocation = 0x11C;
 		Engine::SceneComponent::ComponentVelocity = 0x140;
-		Engine::StaticMeshComponent::StaticMesh = 0x420;
-		Engine::SkinnedMeshComponent::CachedWorldSpaceBounds = 0x5A0;
-		FortniteGame::FortPawn::bIsDBNO = 0x53A;
-		FortniteGame::FortPawn::bIsDying = 0x520;
-		FortniteGame::FortPlayerStateAthena::TeamIndex = 0xE60;
-		FortniteGame::FortPickup::PrimaryPickupItemEntry = 0x280;
+		Engine::StaticMeshComponent::StaticMesh = 0x478;
+		Engine::SkinnedMeshComponent::CachedWorldSpaceBounds = 0x5F8;
+		FortniteGame::FortPawn::bIsDBNO = 0x552;
+		FortniteGame::FortPawn::bIsDying = 0x538;
+		FortniteGame::FortPlayerStateAthena::TeamIndex = 0xE88;
+		FortniteGame::FortPickup::PrimaryPickupItemEntry = 0x2A8;
 		FortniteGame::FortItemDefinition::DisplayName = 0x70;
 		FortniteGame::FortItemDefinition::Tier = 0x54;
 		FortniteGame::FortItemEntry::ItemDefinition = 0x18;
-		FortniteGame::FortPawn::CurrentWeapon = 0x588;
-		FortniteGame::FortWeapon::WeaponData = 0x358;
+		FortniteGame::FortPawn::CurrentWeapon = 0x5C0;
+		FortniteGame::FortWeapon::WeaponData = 0x378;
 		FortniteGame::FortWeaponItemDefinition::WeaponStatHandle = 0x7B8;
-		FortniteGame::FortProjectileAthena::FireStartLoc = 0x850;
+		FortniteGame::FortProjectileAthena::FireStartLoc = 0x878;
 		FortniteGame::FortBaseWeaponStats::ReloadTime = 0xFC;
-		FortniteGame::BuildingContainer::bAlreadySearched = 0xC59;
+		FortniteGame::BuildingContainer::bAlreadySearched = 0xC71;
 		
 
 		return TRUE;
